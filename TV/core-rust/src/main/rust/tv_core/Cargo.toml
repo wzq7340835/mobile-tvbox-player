@@ -1,0 +1,33 @@
+[package]
+name = "tv_core"
+version = "5.4.1"
+edition = "2021"
+description = "TV core performance module - player, decoder, cache, network stack"
+
+[lib]
+name = "tv_core"
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+jni = "0.21"
+log = "0.4"
+android_logger = "0.14"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["json", "stream", "rustls-tls"], default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+bytes = "1"
+once_cell = "1"
+parking_lot = "0.12"
+crossbeam-channel = "0.5"
+ring = "0.17"
+base64 = "0.22"
+url = "2"
+lru = "0.12"
+dashmap = "6"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true
