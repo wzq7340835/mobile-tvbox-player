@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.leanback.widget.BrowseFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/browse_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- 主浏览 Fragment 容器 -->
+    <fragment
+        android:id="@+id/main_browse_fragment"
+        android:name="com.player.tvbox.ui.tv.MainBrowseFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 导入源覆盖层 -->
+    <LinearLayout
+        android:id="@+id/import_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/player_background"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/import_source"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <androidx.leanback.widget.OnActionClickedListener
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 导入按钮 -->
+        <androidx.leanback.widget.RowPresenter
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.leanback.widget.BrowseFrameLayout>

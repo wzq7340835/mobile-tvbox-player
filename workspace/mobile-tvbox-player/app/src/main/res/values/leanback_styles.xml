@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TV Leanback 主题 -->
+    <style name="Theme.MobileTVBox.TV" parent="Theme.Leanback">
+        <item name="defaultBrandColor">@color/primary</item>
+        <item name="defaultBrandColorDark">@color/primary_dark</item>
+        <item name="defaultSearchColor">@color/secondary</item>
+        
+        <!-- 背景色 -->
+        <item name="android:colorBackground">@color/background</item>
+        
+        <!-- 卡片样式 -->
+        <item name="browseRowsFadingEdge">true</item>
+        <item name="browseRowsMarginStart">54dp</item>
+        
+        <!-- 隐藏标题栏 -->
+        <item name="browseShowTitleView">false</item>
+    </style>
+    
+    <!-- TV 卡片样式 -->
+    <style name="TvCardStyle">
+        <item name="lbCardViewStyle">@style/Widget.Leanback.CardViewStyle</item>
+        <item name="lbCardBackground">@color/surface</item>
+        <item name="lbCardBorderColor">@color/primary</item>
+        <item name="lbCardInfoAreaBackground">@color/player_background</item>
+    </style>
+    
+    <!-- TV 文本样式 -->
+    <style name="TvTextTitle" parent="TextAppearance.Leanback.Title">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="TvTextBody" parent="TextAppearance.Leanback.Body">
+        <item name="android:textColor">@color/on_surface_variant</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

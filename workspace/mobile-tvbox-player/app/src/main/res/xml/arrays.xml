@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 播放器类型 -->
+    <string-array name="player_types">
+        <item>自动（优先 MPV）</item>
+        <item>仅使用 MPV</item>
+        <item>仅使用 ExoPlayer</item>
+    </string-array>
+    
+    <string-array name="player_types_values">
+        <item>auto</item>
+        <item>mpv</item>
+        <item>exo</item>
+    </string-array>
+    
+    <!-- 视频清晰度 -->
+    <string-array name="video_quality">
+        <item>自动</item>
+        <item>高清 1080P</item>
+        <item>标清 720P</item>
+        <item>流畅 480P</item>
+    </string-array>
+    
+    <string-array name="video_quality_values">
+        <item>auto</item>
+        <item>1080p</item>
+        <item>720p</item>
+        <item>480p</item>
+    </string-array>
+</resources>

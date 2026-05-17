@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TVBox Player</string>
+    
+    <!-- 通用 -->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="loading">加载中...</string>
+    <string name="error">错误</string>
+    <string name="no_data">暂无数据</string>
+    <string name="confirm">确认</string>
+    <string name="delete">删除</string>
+    <string name="clear">清空</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    
+    <!-- 主界面 -->
+    <string name="home">首页</string>
+    <string name="history">历史</string>
+    <string name="favorite">收藏</string>
+    <string name="source">数据源</string>
+    
+    <!-- 源导入 -->
+    <string name="import_source">导入数据源</string>
+    <string name="import_from_url">网络导入</string>
+    <string name="import_from_file">本地导入</string>
+    <string name="import_from_qr">扫码导入</string>
+    <string name="enter_url">请输入 URL 地址</string>
+    <string name="url_hint">例如：https://example.com/tvbox.json</string>
+    <string name="import_success">导入成功</string>
+    <string name="import_failed">导入失败</string>
+    <string name="invalid_url">无效的 URL</string>
+    <string name="invalid_file">无效的文件</string>
+    <string name="scan_qr">扫描二维码</string>
+    
+    <!-- 播放器 -->
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="resume">继续</string>
+    <string name="stop">停止</string>
+    <string name="player_loading">正在加载视频...</string>
+    <string name="player_error">播放失败</string>
+    <string name="buffering">缓冲中...</string>
+    <string name="video_end">播放结束</string>
+    <string name="retry">重试</string>
+    
+    <!-- 历史记录 -->
+    <string name="clear_history">清空历史</string>
+    <string name="clear_history_confirm">确定要清空所有历史记录吗？</string>
+    <string name="no_history">暂无观看历史</string>
+    <string name="continue_watch">继续观看</string>
+    <string name="watched_percent">已观看 %1$d%%</string>
+    
+    <!-- 收藏 -->
+    <string name="add_favorite">加入收藏</string>
+    <string name="remove_favorite">取消收藏</string>
+    <string name="already_favorite">已在收藏中</string>
+    <string name="no_favorite">暂无收藏</string>
+    <string name="clear_favorite">清空收藏</string>
+    <string name="clear_favorite_confirm">确定要清空所有收藏吗？</string>
+    
+    <!-- 站点 -->
+    <string name="sites">站点列表</string>
+    <string name="site_name">站点名称</string>
+    <string name="no_sites">暂无站点</string>
+    
+    <!-- 设置 -->
+    <string name="player_settings">播放器设置</string>
+    <string name="player_type">播放器类型</string>
+    <string name="player_type_auto">自动（优先 MPV）</string>
+    <string name="player_type_mpv">仅使用 MPV</string>
+    <string name="player_type_exo">仅使用 ExoPlayer</string>
+    <string name="video_quality">视频清晰度</string>
+    <string name="enable_hwdec">硬件解码</string>
+    <string name="enable_cache">启用缓存</string>
+    
+    <!-- 关于 -->
+    <string name="app_version">版本 %1$s</string>
+    <string name="app_description">一款支持 TVBox 源的双端影视播放器</string>
+    <string name="technical_support">技术支持</string>
+    
+    <!-- 错误信息 -->
+    <string name="error_network">网络连接失败，请检查网络设置</string>
+    <string name="error_parse">解析失败，文件格式不正确</string>
+    <string name="error_play">播放失败，请重试</string>
+    <string name="error_not_found">资源未找到</string>
+    <string name="error_timeout">请求超时</string>
+    <string name="error_unknown">未知错误</string>
+    
+    <!-- 权限请求 -->
+    <string name="permission_storage">需要存储权限以读取本地文件</string>
+    <string name="permission_camera">需要相机权限以扫描二维码</string>
+    <string name="permission_denied">权限被拒绝</string>
+    
+</resources>

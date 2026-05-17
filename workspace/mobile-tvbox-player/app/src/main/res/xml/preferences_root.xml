@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 播放器设置 -->
+    <PreferenceCategory
+        android:title="@string/player_settings">
+
+        <ListPreference
+            android:key="player_type"
+            android:title="@string/player_type"
+            android:entries="@array/player_types"
+            android:entryValues="@array/player_types_values"
+            android:defaultValue="auto"
+            android:summary="%s" />
+
+        <SwitchPreferenceCompat
+            android:key="enable_hwdec"
+            android:title="@string/enable_hwdec"
+            android:defaultValue="true"
+            android:summary="启用硬件解码加速" />
+
+        <SwitchPreferenceCompat
+            android:key="enable_cache"
+            android:title="@string/enable_cache"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <!-- 关于 -->
+    <PreferenceCategory
+        android:title="@string/about">
+
+        <Preference
+            android:key="app_version"
+            android:title="@string/app_version"
+            android:summary="1.0.0" />
+
+        <Preference
+            android:key="app_description"
+            android:title="@string/app_description" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

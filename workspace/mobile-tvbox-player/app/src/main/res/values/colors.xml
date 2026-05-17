@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色调 - 蓝紫色 -->
+    <color name="primary">#6750A4</color>
+    <color name="primary_dark">#53488A</color>
+    <color name="primary_light">#E8E0FF</color>
+    
+    <!-- 次要颜色 - 青绿色 -->
+    <color name="secondary">#006874</color>
+    <color name="secondary_dark">#004F59</color>
+    <color name="secondary_light">#BBF1FE</color>
+    
+    <!-- 背景和表面 -->
+    <color name="background">#1C1B1F</color>
+    <color name="surface">#28272B</color>
+    <color name="on_surface">#E6E1E5</color>
+    <color name="on_surface_variant">#CAC4D0</color>
+    
+    <!-- 基本颜色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="dark_gray">#404040</color>
+    
+    <!-- 错误和警告 -->
+    <color name="error">#B3261E</color>
+    <color name="warning">#FF9800</color>
+    <color name="success">#4CAF50</color>
+    
+    <!-- 播放器控制 -->
+    <color name="player_background">#CC000000</color>
+    <color name="player_control">#FFFFFF</color>
+    
+    <!-- TV 焦点框颜色 -->
+    <color name="tv_focus">#FFD700</color>
+</resources>

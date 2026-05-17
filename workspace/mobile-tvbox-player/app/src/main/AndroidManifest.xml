@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <!-- 存储权限 - 用于读取本地 JSON 文件 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    
+    <!-- 相机权限 - 用于扫码 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    
+    <!-- 触摸屏 - 手机需要，TV 不需要 -->
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    
+    <!-- Leanback - TV 设备 -->
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileTVBox"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        
+        <!-- 主 Activity - 自动区分 TV/手机 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.MobileTVBox">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <!-- TV Leanback 支持 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 视频播放 Activity -->
+        <activity
+            android:name=".activity.PlayerActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.MobileTVBox.Player" />
+        
+        <!-- 二维码扫描 Activity -->
+        <activity
+            android:name=".activity.QrScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MobileTVBox" />
+        
+        <!-- 文件选择 Activity -->
+        <activity
+            android:name=".activity.FilePickerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MobileTVBox" />
+            
+        <!-- 历史记录 Activity -->
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MobileTVBox" />
+            
+        <!-- 收藏 Activity -->
+        <activity
+            android:name=".activity.FavoriteActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MobileTVBox" />
+            
+        <!-- 设置 Activity -->
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MobileTVBox" />
+
+    </application>
+
+</manifest>
